@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+ol,
+ul {
+  list-style: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  margin-top: 5px;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item,
+.editform {
+  padding: 10px 10px;
+  border-radius: 3px;
+  width: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.148);
+  background-color: #fff;
+  color: #000000;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item i {
+  cursor: pointer;
+}
+.item1 {
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: -500px;
+  padding: 10px 10px;
+  margin-top: 0px;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  color: #ff0000;
+  border: 1px solid #fd0d0d;
+  transition: all 0.8s;
+}
+.item1:hover {
+  background-color: #fd0d0d;
+  color: #fff;
+}
+.btn,
+.editbtn {
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 7px 0;
+  margin-bottom: 7px;
+  width: 50px;
+  transition: all 1s;
+}
+.btn:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+  cursor: pointer;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h2 {
+  text-align: center;
+  color: #0d6efd;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#searchinp {
+  border: 1px solid rgba(0, 0, 0, 0.268);
+  padding: 10px 5px;
+  width: 450px;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.6s;
+  margin-bottom: 10px;
+}
+#searchinp:focus {
+  box-shadow: 1px 0px 0px 5px rgba(0, 141, 255, 0.2);
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.orab {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+#dark {
+  border: 1px solid black;
+  border-radius: 11px;
+  color: #ffffff;
+  background-color: #09136f;
+  padding: 10px;
+  cursor: pointer;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+  border: 1px solid rgba(0, 0, 0, 0.245);
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: 350px;
+  padding: 70px 50px 55px 45px;
+}
+#aditinp {
+  width: 300px;
+  outline: none;
+  padding: 5px 7px 5px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.147);
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+#aditinp:focus {
+  box-shadow: 1px 1px 8px 4px rgba(0, 141, 255, 0.2);
+  border: 1px solid rgba(0, 141, 255, 0.2);
+}
+.editbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  width: 100px;
+  border: 1px solid green;
+  margin-top: 5px;
+}
+.editbtn:hover {
+  background-color: green;
+  transition: all 0.3s;
+  color: #fff;
+  cursor: pointer;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000071;
+  z-index: 10;
+}
+.hidden {
+  display: none;
+}
+.fa-regular fa-pen-to-square:hover {
+  width: 100px;
+  height: 100px;
+}
+.likom {
+  display: flex;
+  align-items: center;
+}
+.img {
+  cursor: pointer;
+  transition: all 0.4s;
+  width: 25px;
+}
+.img:hover {
+  transform: scale(1.2);
+}
+.img1 {
+  cursor: pointer;
+  transition: all 0.4s;
+  width: 25px;
+}
+.img1:hover {
+  transform: scale(1.2);
+}
+.item:hover {
+  transition: all 0.6s;
+  background-color: #ebebeb;
+}
+.label {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  appearance: none;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+span {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.ll {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dizabled .label span {
+  background: url(./img/i.webp);
+  background-size: cover;
+}
+.dizabled {
+  opacity: 0.5;
+}
